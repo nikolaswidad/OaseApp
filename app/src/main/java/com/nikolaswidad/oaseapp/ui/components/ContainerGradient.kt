@@ -8,12 +8,9 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.graphics.Brush
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.nikolaswidad.oaseapp.ui.theme.Gradient
+import com.nikolaswidad.oaseapp.ui.theme.GradientDark
 
 @Composable
 fun ContainerGradient() {
@@ -22,7 +19,7 @@ fun ContainerGradient() {
             .width(width = 234.dp)
             .height(height = 171.dp)
             .clip(shape = RoundedCornerShape(20.dp))
-            .background(brush = Gradient)
+            .background(brush = GradientDark)
     )
 }
 
