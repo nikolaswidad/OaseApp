@@ -53,15 +53,19 @@ import kotlinx.coroutines.launch
 @Composable
 fun HomeScreen(
     modifier: Modifier = Modifier,
+//    viewModel: HomeViewModel = viewModel(
+//        factory = ViewModelFactory(Injection.provideRepository())
+//    ),
     viewModel: HomeViewModel = viewModel(
-        factory = ViewModelFactory(Injection.provideRepository())
+        factory = ViewModelFactory.getInstance()
     ),
+
     navigateToDetail: (Long) -> Unit,
 ) {
     viewModel.uiState.collectAsState(initial = UiState.Loading).value.let { uiState -> 
         when (uiState) {
             is UiState.Loading -> {
-                viewModel.getAllNews()
+                viewModel.getHeadlineNews()
             }
             is UiState.Success -> {
                 HomeContent(
