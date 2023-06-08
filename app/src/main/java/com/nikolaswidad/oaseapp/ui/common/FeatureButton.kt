@@ -1,4 +1,4 @@
-package com.nikolaswidad.oaseapp.ui.components
+package com.nikolaswidad.oaseapp.ui.common
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background

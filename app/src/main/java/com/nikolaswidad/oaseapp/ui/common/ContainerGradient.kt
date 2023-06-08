@@ -1,4 +1,4 @@
-package com.nikolaswidad.oaseapp.ui.components
+package com.nikolaswidad.oaseapp.ui.common
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

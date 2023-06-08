@@ -15,7 +15,7 @@
         android:theme="@style/Theme.OaseApp"
         tools:targetApi="31">
         <activity
-            android:name=".ui.screen.detail.NewsDetailActivity"
+            android:name=".ui.screen.news.NewsDetailActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

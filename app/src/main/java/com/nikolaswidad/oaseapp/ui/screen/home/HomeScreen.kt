@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
@@ -36,10 +35,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.nikolaswidad.oaseapp.di.Injection
-import com.nikolaswidad.oaseapp.model
-import com.nikolaswidad.oaseapp.ui.ViewModelFactory
-import com.nikolaswidad.oaseapp.ui.common.UiState
-import com.nikolaswidad.oaseapp.ui.components.NewsItem
+import com.nikolaswidad.oaseapp.domain.model.FakeArticleDataSource
+import com.nikolaswidad.oaseapp.ui.common.NewsItem
 import kotlinx.coroutines.launch
 
 @Composable
@@ -108,7 +105,7 @@ fun HomeContent(
             state = listState,
             contentPadding = PaddingValues(bottom = 80.dp)
         ) {
-            items(FakeNewsDataSource.dummyNews, key = { it.id }) { news ->
+            items(FakeArticleDataSource.dummyNews, key = { it.id }) { news ->
                 Column {
                     NewsItem(
                         newsId = news.id,

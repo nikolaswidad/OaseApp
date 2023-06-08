@@ -1,4 +1,4 @@
-package com.nikolaswidad.oaseapp.ui.components
+package com.nikolaswidad.oaseapp.ui.common
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -70,7 +70,7 @@ fun LargeNewsItem(
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
                     Image(
-                        painter = painterResource(R.drawable.ic_positive),
+                        painter = painterResource(R.drawable.ic_sentiment_positive),
                         contentDescription = null,
                         modifier = Modifier
 
@@ -105,7 +105,7 @@ fun LargeNewsItem(
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
                     Image(
-                        painter = painterResource(R.drawable.ic_verified),
+                        painter = painterResource(R.drawable.ic_credibility_verified),
                         contentDescription = null
                     )
                     Spacer(
@@ -281,7 +281,7 @@ fun NewsItem(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Image(
-                    painter = painterResource(R.drawable.ic_positive),
+                    painter = painterResource(R.drawable.ic_sentiment_positive),
                     contentDescription = null,
                     modifier = Modifier
 
@@ -316,7 +316,7 @@ fun NewsItem(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Image(
-                    painter = painterResource(R.drawable.ic_verified),
+                    painter = painterResource(R.drawable.ic_credibility_verified),
                     contentDescription = null
                 )
                 Spacer(
