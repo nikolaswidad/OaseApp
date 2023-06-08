@@ -2,7 +2,7 @@
     <string name="app_name">OaseApp</string>
     <string name="scroll_to_top">Scroll to Top</string>
     <string name="search_news">Search News</string>
-<!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
     <string name="menu_welcome">Welcome</string>
     <string name="menu_detail">Detail</string>
     <string name="tv_sentiment">Sentiment</string>
