@@ -36,8 +36,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.nikolaswidad.oaseapp.di.Injection
-import com.nikolaswidad.oaseapp.model.FakeNewsDataSource
-import com.nikolaswidad.oaseapp.model.NewsBookmark
+import com.nikolaswidad.oaseapp.model
 import com.nikolaswidad.oaseapp.ui.ViewModelFactory
 import com.nikolaswidad.oaseapp.ui.common.UiState
 import com.nikolaswidad.oaseapp.ui.components.NewsItem
@@ -51,7 +50,7 @@ fun HomeScreen(
     ),
     navigateToDetail: (Long) -> Unit,
 ) {
-    viewModel.uiState.collectAsState(initial = UiState.Loading).value.let { uiState -> 
+    viewModel.uiState.collectAsState(initial = UiState.Loading).value.let { uiState ->
         when (uiState) {
             is UiState.Loading -> {
                 viewModel.getAllNews()

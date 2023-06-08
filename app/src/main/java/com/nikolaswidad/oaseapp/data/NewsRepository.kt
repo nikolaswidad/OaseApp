@@ -1,6 +1,5 @@
 package com.nikolaswidad.oaseapp.data
 
-import com.nikolaswidad.oaseapp.model.NewsBookmark
 import com.nikolaswidad.oaseapp.model.FakeNewsDataSource
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.Flow

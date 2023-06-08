@@ -2,7 +2,7 @@ package com.nikolaswidad.oaseapp.model
 
 object FakeNewsDataSource {
     val dummyNews = listOf(
-        News(
+        NewsUi(
             1,
             "Jokowi Pastikan Ibu Kota Baru Tawarkan Konsep Kota Smart Metropolis",
             "R.drawable.news_pro",
@@ -14,7 +14,7 @@ object FakeNewsDataSource {
             77,
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         ),
-        News(
+        NewsUi(
             2,
             "Ki Hajar Dewantara",
             "https://raw.githubusercontent.com/dicodingacademy/assets/main/android_compose_academy/pahlawan/2.jpg",
@@ -26,7 +26,7 @@ object FakeNewsDataSource {
             30,
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         ),
-        News(
+        NewsUi(
             3,
             "R.M. Surjopranoto",
             "https://raw.githubusercontent.com/dicodingacademy/assets/main/android_compose_academy/pahlawan/3.jpg",
@@ -38,7 +38,7 @@ object FakeNewsDataSource {
             77,
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         ),
-        News(
+        NewsUi(
             4,
             "Mohammad Hoesni Thamrin",
             "https://raw.githubusercontent.com/dicodingacademy/assets/main/android_compose_academy/pahlawan/4.jpg",
@@ -50,7 +50,7 @@ object FakeNewsDataSource {
             77,
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         ),
-        News(
+        NewsUi(
             5,
             "KH. Samanhudi",
             "https://raw.githubusercontent.com/dicodingacademy/assets/main/android_compose_academy/pahlawan/5.jpg",
@@ -62,7 +62,7 @@ object FakeNewsDataSource {
             77,
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         ),
-        News(
+        NewsUi(
             6,
             "H.O.S. Cokroaminoto",
             "https://raw.githubusercontent.com/dicodingacademy/assets/main/android_compose_academy/pahlawan/6.jpg",
@@ -74,7 +74,7 @@ object FakeNewsDataSource {
             77,
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         ),
-        News(
+        NewsUi(
             7,
             "Danudirja Setiabudi",
             "https://raw.githubusercontent.com/dicodingacademy/assets/main/android_compose_academy/pahlawan/7.jpg",
@@ -86,7 +86,7 @@ object FakeNewsDataSource {
             77,
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         ),
-        News(
+        NewsUi(
             8,
             "Si Singamangaradja XII",
             "https://raw.githubusercontent.com/dicodingacademy/assets/main/android_compose_academy/pahlawan/8.jpg",

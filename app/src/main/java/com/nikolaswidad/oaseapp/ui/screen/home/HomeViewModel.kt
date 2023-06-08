@@ -3,7 +3,6 @@ package com.nikolaswidad.oaseapp.ui.screen.home
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.nikolaswidad.oaseapp.data.NewsRepository
-import com.nikolaswidad.oaseapp.model.NewsBookmark
 import com.nikolaswidad.oaseapp.ui.common.UiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

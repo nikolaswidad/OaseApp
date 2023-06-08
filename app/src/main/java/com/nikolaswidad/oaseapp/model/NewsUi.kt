@@ -1,9 +1,9 @@
 package com.nikolaswidad.oaseapp.model
 
-data class News(
+data class NewsUi(
     val id: Long,
     val title: String,
-    val photoUrl: String,
+    val image: String,
     val source: String,
     val publishedAt: String,
     val verified: String,
