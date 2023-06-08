@@ -265,14 +265,6 @@ fun NewsItem(
                     .clip(Shapes.small)
 
             )
-//            Image(
-//                painter = painterResource(image),
-//                contentDescription = null,
-//                contentScale = ContentScale.Crop,
-//                modifier = Modifier
-//                    .size(130.dp)
-//                    .clip(Shapes.small)
-//            )
         }
         Spacer(
             modifier = Modifier
@@ -352,13 +344,6 @@ fun NewsItem(
                     )
                 }
             }
-            // Row Verified End
-
-            // Static Icon Bookmark
-//            Image(
-//                painter = painterResource(R.drawable.ic_bookmark_false),
-//                contentDescription = "Delete Bookmarks"
-//            )
             var isBookmarked = false
 
             BookmarkButton(
@@ -391,15 +376,13 @@ fun NewsItem(
 fun CardItemPreview() {
     OaseAppTheme() {
         NewsItem(
-//            photoUrl = "R.drawable.news_pro",
-//            title = "Jokowi Pastikan Ibu Kota Baru Tawarkan Konsep Kota Smart Metropolis",
         1,
-            "Jokowi Pastikan Ibu Kota Baru Tawarkan Konsep Kota Smart Metropolis",
-            "R.drawable.news_pro",
-            "KOMPAS",
-            "7 Hours Ago",
-            "Real",
-            88,
+        "Jokowi Pastikan Ibu Kota Baru Tawarkan Konsep Kota Smart Metropolis",
+        "R.drawable.news_pro",
+        "KOMPAS",
+        "7 Hours Ago",
+        "Real",
+        88,
         )
     }
 }

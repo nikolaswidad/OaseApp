@@ -11,4 +11,5 @@ data class News(
     val sentiment: String,
     val sentimentPercentage: Int,
     val summary: String,
+    val bookmarked: Boolean,
 )

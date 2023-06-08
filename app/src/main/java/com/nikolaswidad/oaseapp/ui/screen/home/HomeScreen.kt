@@ -8,8 +8,6 @@ import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
@@ -23,7 +21,6 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.derivedStateOf
@@ -35,11 +32,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.nikolaswidad.oaseapp.di.Injection
 import com.nikolaswidad.oaseapp.model.FakeNewsDataSource
@@ -47,7 +41,6 @@ import com.nikolaswidad.oaseapp.model.NewsBookmark
 import com.nikolaswidad.oaseapp.ui.ViewModelFactory
 import com.nikolaswidad.oaseapp.ui.common.UiState
 import com.nikolaswidad.oaseapp.ui.components.NewsItem
-import com.nikolaswidad.oaseapp.ui.theme.OaseAppTheme
 import kotlinx.coroutines.launch
 
 @Composable
@@ -80,16 +73,16 @@ fun HomeContent(
     modifier: Modifier = Modifier,
     navigateToDetail: (Long) -> Unit
 ) {
-//    LazyColumn(
-//        horizontalAlignment = Alignment.CenterHorizontally,
-//    ){
-////        item {
-////            SearchBox()
-////            Spacer(
-////                modifier = Modifier
-////                    .height(height = 10.dp)
-////            )
-////        }
+    LazyColumn(
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ){
+//        item {
+//            SearchBox()
+//            Spacer(
+//                modifier = Modifier
+//                    .height(height = 10.dp)
+//            )
+//        }
 //        item {
 //            Text(
 //                text = "Top News",
@@ -103,8 +96,8 @@ fun HomeContent(
 //                    .height(height = 100.dp)
 //            )
 //        }
-//
-//    }
+
+    }
     Box(modifier = modifier) {
         val scope = rememberCoroutineScope()
         val listState = rememberLazyListState()
@@ -173,10 +166,12 @@ fun ScrollToTopButton(
     }
 }
 
-//@Preview(showBackground = true)
-//@Composable
-//fun OaseAppPreview() {
-//    OaseAppTheme {
-//        HomeScreen()
-//    }
-//}
+@Composable
+@Preview
+fun HomeContentPreview() {
+    val dummyNews = FakeNewsDataSource.dummyNews
+    HomeContent(
+        newsBookmark = emptyList(), // Pass an empty list or provide appropriate data
+        navigateToDetail = {},
+    )
+}
