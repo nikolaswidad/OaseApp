@@ -8,8 +8,6 @@ import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
@@ -23,7 +21,6 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.derivedStateOf
@@ -35,19 +32,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.nikolaswidad.oaseapp.di.Injection
-import com.nikolaswidad.oaseapp.model.FakeNewsDataSource
-import com.nikolaswidad.oaseapp.model.NewsBookmark
+import com.nikolaswidad.oaseapp.data.entity.FakeNewsData
+import com.nikolaswidad.oaseapp.data.entity.NewsEntity
 import com.nikolaswidad.oaseapp.ui.ViewModelFactory
 import com.nikolaswidad.oaseapp.ui.common.UiState
 import com.nikolaswidad.oaseapp.ui.components.NewsItem
-import com.nikolaswidad.oaseapp.ui.theme.OaseAppTheme
+import com.nikolaswidad.oaseapp.ui.components.NewsItemCard
 import kotlinx.coroutines.launch
 
 @Composable
@@ -65,7 +58,7 @@ fun HomeScreen(
             }
             is UiState.Success -> {
                 HomeContent(
-                    newsBookmark = uiState.data,
+                    news = uiState.data,
                     navigateToDetail = navigateToDetail
                 )
             }
@@ -76,7 +69,7 @@ fun HomeScreen(
 
 @Composable
 fun HomeContent(
-    newsBookmark: List<NewsBookmark>,
+    news: List<NewsEntity>,
     modifier: Modifier = Modifier,
     navigateToDetail: (Long) -> Unit
 ) {
@@ -116,9 +109,9 @@ fun HomeContent(
             state = listState,
             contentPadding = PaddingValues(bottom = 80.dp)
         ) {
-            items(FakeNewsDataSource.dummyNews, key = { it.id }) { news ->
+            items(FakeNewsData.dummyNews, key = { it.id }) { news ->
                 Column {
-                    NewsItem(
+                    NewsItemCard(
                         newsId = news.id,
                         title = news.title,
                         photoUrl = news.photoUrl,
